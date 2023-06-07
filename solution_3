@@ -1,0 +1,14 @@
+#!/bin/bash
+# This script asks user for a phrase and counts number of words and white spaces.
+
+echo "Enter a phrase:"
+read phrase
+
+# Count the number of words
+word_count=$(echo "$phrase" | wc -w)
+
+# Count the number of white spaces
+whitespace_count=$(echo "$phrase" | grep -o ' ' | wc -l)
+
+echo "The number of words is $word_count."
+echo "The number of white spaces is $whitespace_count."
