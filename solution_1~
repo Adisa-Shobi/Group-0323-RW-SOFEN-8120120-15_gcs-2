@@ -1,6 +1,0 @@
-#!/bin/bash
-output="one\ntwo\nthree\nfour\nfive"
-filename="$(date +"%Y-%M-%d")-file.txt"
-touch $filename
-echo $output > $filename
-echo $output
